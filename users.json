@@ -15,6 +15,17 @@
       "password": "strong-secret",
       "username": "jhon",
       "posts": []
+    },
+    {
+      "email": "senemdemir262@gmail.com",
+      "password": "senemdemir",
+      "username": "senem",
+      "id": 3
+    },
+    {
+      "email": "senem@gmail.com",
+      "password": "123456",
+      "id": 4
     }
   ]
 }

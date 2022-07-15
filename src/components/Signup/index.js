@@ -11,7 +11,8 @@ function Signup() {
     initialValues:{
       email:'',
       password:'',
-      passwordConfirm:''
+      passwordConfirm:'',
+      username:''
     },
     onSubmit : values => {
       console.log(values)
@@ -45,7 +46,23 @@ function Signup() {
           </div>
         )}
         <br />
+        
+
+        <label>Username</label>
+        <input
+        name='username'
+        value={values.username}
+        onChange={handleChange}
+        onBlur={handleBlur}
+        />
+
+        {errors.username && touched.username &&(
+          <div className={style.error}>
+            {errors.username}
+          </div>
+        )}
         <br />
+        
 
         <label>Password</label>
         <input
@@ -61,7 +78,7 @@ function Signup() {
           </div>
         )}
         <br />
-        <br />
+        
 
         <label>Confirm password</label>
         <input 
@@ -77,7 +94,7 @@ function Signup() {
           </div>
         )}
         <br />
-        <br />
+        
 
         <button className={style.buton} type='submit'> Sign up</button>
       </form>
