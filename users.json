@@ -1,0 +1,20 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "email": "tom@email.com",
+      "password": "secret",
+      "username": "tom",
+      "posts": [
+        4444
+      ]
+    },
+    {
+      "id": 2,
+      "email": "john@email.com",
+      "password": "strong-secret",
+      "username": "jhon",
+      "posts": []
+    }
+  ]
+}
