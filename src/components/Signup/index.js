@@ -18,7 +18,8 @@ function Signup() {
       console.log(values)
       axios.post(`${process.env.REACT_APP_API_URL}/users`, {
         "email" : values.email,
-        "password": values.password
+        "password": values.password,
+        "username":values.username
       }).then((response) => {
         console.log(`${response.data.email} email adresi için kayıt oluşturuldu`);
 
