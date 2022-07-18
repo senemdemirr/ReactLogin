@@ -1,18 +1,19 @@
 import React, { useState } from 'react'
 import style from './style.module.css'
-import {Link} from 'react-router-dom'
+import {Link , useNavigate} from 'react-router-dom'
 import axios from 'axios'
 
 function Home() {
 
   const [email , setEmail] = useState("");
   const [pass , setPass] = useState("");
+  const navigate = useNavigate();
 
   const handleLogin = () => {
     axios.get(`${process.env.REACT_APP_API_URL}/users`).then((response)=>{
       response.data.forEach((user) => {
         if(user.email === email && user.password === pass){
-          window.location.href = "/success";
+          navigate("/success");
         }
       });
 
