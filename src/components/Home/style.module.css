@@ -66,6 +66,7 @@ input::before{
     top: -30px;
     left: 130px;
     cursor: pointer;
+    text-decoration: none;
 }
 button{
     background-color: transparent;

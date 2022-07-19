@@ -99,7 +99,7 @@ function Signup() {
 
         <button className={style.buton} type='submit'> Sign up</button>
       </form>
-      <Link to='/'>Back to Log in</Link>
+      <Link className={style.back} to='/'>Back to Log in</Link>
     </div>
   )
 }

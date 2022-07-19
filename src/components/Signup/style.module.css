@@ -50,4 +50,13 @@ input:focus{
     width: 100px;
     color: #fff;
     font-size: 16px;
+    cursor: pointer;
+}
+.back{
+    position: relative;
+    top: -35px;
+    left: 35%;
+    color: #FF0063;
+    text-decoration: none;
+    cursor: pointer;
 }
