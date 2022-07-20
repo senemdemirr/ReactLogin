@@ -2,6 +2,7 @@ import {BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from './components/Home';
 import Signup from './components/Signup';
 import Success from './components/Success';
+import TodoList from "./components/todo";
 
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
         <Route path='/' element={<Home/>}></Route>
         <Route path='/signup' element={<Signup/>}></Route>
         <Route path='/success' element={<Success/>}></Route>
+        <Route path='/todo' element={<TodoList/>}></Route>
 
       </Routes>
     </Router>
