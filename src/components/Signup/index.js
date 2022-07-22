@@ -4,6 +4,10 @@ import {useFormik} from 'formik'
 import validationSchema from '../validations'
 import {Link} from 'react-router-dom'
 import axios from 'axios'
+import Swal from 'sweetalert2'
+import withReactContent from 'sweetalert2-react-content'
+
+  const MySwal = withReactContent(Swal);
 
 
 function Signup() {
@@ -22,6 +26,12 @@ function Signup() {
         "username":values.username
       }).then((response) => {
         console.log(`${response.data.email} email adresi için kayıt oluşturuldu`);
+        
+    MySwal.fire({
+      title: <strong>Good job!</strong>,
+      html: <i>Account Created</i>,
+      icon: 'success'
+  })
 
       }).catch((err) => {
         console.log(err)
